@@ -10,7 +10,7 @@ function LocateIP($ip)
         "whois.afrinic.net" // Africa 
     );
     
-    // Fetching whois on each server.
+    // Fetching each whois server.
     $results = array();
     foreach ($whoisservers as $whoisserver) {
         $result = WhoisQuery($whoisserver, $ip);
@@ -26,7 +26,7 @@ function LocateIP($ip)
         }
     }
     
-    // Converting the results in array
+    // Converting the results to array
     foreach ($results as $whoisserver => $result) {
       $res .= $result;
     }
