@@ -16,7 +16,7 @@ function LocateIP($ip)
         $result = WhoisQuery($whoisserver, $ip);
         if ($result && !in_array($result, $results)) {
             
-            // Checking if the enquiry is not false
+            // Checking if the query is not false
             if (strstr($result, "IPv4 address block not managed by the RIPE NCC") || strstr($result, "address range is not administered by APNIC")) {
                 // Do nothing
             } elseif (strstr($result, "country")) {
