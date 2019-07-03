@@ -1,7 +1,7 @@
 <?php
 function LocateIP($ip)
 {
-    //Whois servers list
+    //Whois ip zones's servers list 
     $whoisservers = array(
         "whois.lacnic.net", // Latin America and Caribbean - returns data for ALL locations worldwide
         "whois.apnic.net", // Asia/Pacific only
@@ -26,7 +26,7 @@ function LocateIP($ip)
         }
     }
     
-    // Converting the results to array
+    // Converting the results into array
     foreach ($results as $whoisserver => $result) {
       $res .= $result;
     }
@@ -51,6 +51,7 @@ function LocateIP($ip)
     
 }
 
+// Performing the whois query from the ip zones
 function WhoisQuery($whoisserver, $ip)
 {
     $port    = 43;
