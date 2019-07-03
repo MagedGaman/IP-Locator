@@ -1,4 +1,4 @@
- <?php
+<?php
 function LocateIP($ip)
 {
     //Whois servers list
@@ -81,4 +81,4 @@ echo "<pre>";
 print_r($get);
 echo "</pre>";
 
-?> 
+?>
