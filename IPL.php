@@ -1,7 +1,7 @@
  <?php
 function LocateIP($ip)
 {
-    //Who is servers list
+    //Whois servers list
     $whoisservers = array(
         "whois.lacnic.net", // Latin America and Caribbean - returns data for ALL locations worldwide
         "whois.apnic.net", // Asia/Pacific only
