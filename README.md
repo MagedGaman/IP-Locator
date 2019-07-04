@@ -30,3 +30,8 @@ Phone Number: +100 0000 000
 
 Usage
 ------------------------------------------
+
+$get = LocateIP('Your_IP');
+echo "<pre>";
+print_r($get);
+echo "</pre>";
