@@ -6,13 +6,13 @@ This Snipe can be used to notify your users about their logins or unauthirsed lo
 
 Example of usage:
 ------------------------------------------
-email: example@example.com
+New device signed in to your account:
 
-time: 2019-07-04 04:11:37 UTC
+Time: 2019-07-04 04:11:37 UTC
 
 IP address: 00.00.00.00
 
-browser: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:67.0) Gecko/20100101 Firefox/67.0
+Browser: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:67.0) Gecko/20100101 Firefox/67.0
 
 If you think this logIn is unauthorised, please reset your account's password immediately. 
 
