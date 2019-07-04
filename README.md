@@ -4,7 +4,7 @@ This Snipe allows you convert an IP address into a full row of data including th
 
 This Snipe can be used to notify your users about their logins or unauthirsed login with rich data, and it does not require any paid API's.
 
-Example of usage:
+Example of a practical usage:
 ------------------------------------------
 New device signed in to your account:
 
