@@ -77,9 +77,4 @@ function WhoisQuery($whoisserver, $ip)
     return $res;
 }
 
-$get = LocateIP($_GET['ip']);
-echo "<pre>";
-print_r($get);
-echo "</pre>";
-
 ?>
