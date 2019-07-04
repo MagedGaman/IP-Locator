@@ -14,6 +14,10 @@ IP address: 00.00.00.00
 
 Browser: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:67.0) Gecko/20100101 Firefox/67.0
 
+Country: Malaysia
+
+City: Kuala Lumpur
+
 If you think this logIn is unauthorised, please reset your account's password immediately. 
 
 You can also take further legal action by contacting the ISP of the attacker:
