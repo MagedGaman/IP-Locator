@@ -1,6 +1,6 @@
 # IP-Locator
 
-This Snipe allows you convert an IP address into a full row of data including the address, connection type, ISP, and the ISP's complaint contact details by checking five IP allocation zones.
+This Snipe allows you to convert an IP address into a full row of data including the address, connection type, ISP, and the ISP's complaint contact details by checking five IP allocation zones.
 
 This Snipe can be used to notify your users about their logins or unauthorized login with rich data, and it does not require any paid API's.
 
