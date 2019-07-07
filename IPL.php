@@ -53,6 +53,7 @@ function LocateIP($ip, $type)
     // Cleaning orginal data and cutting of unnecessary data that came from 
     $country = is_array($output['country']) ? $output['country'][0] : $output['country'];
     $person  = is_array($output['person']) ? join(" OR ", $output['person']) : $output['person'];
+    $website  = is_array($output['website']) ? join(" | ", $output['website']) : $output['website'];
     $abuse   = is_array($output['abuse-mailbox']) ? join(" | ", $output['abuse-mailbox']) : $output['abuse-mailbox'];
     $phone   = is_array($output['phone']) ? join(" | ", $output['phone']) : $output['phone'];
     $descr   = is_array($output['descr']) ? join(", ", $output['descr']) : $output['descr'];
@@ -65,6 +66,7 @@ function LocateIP($ip, $type)
     $normal  = array(
         'country' => $country,
         'person' => $person,
+        'website' => $website,
         'abuse-mailbox' => $abuse,
         'phone' => $phone,
         'descr' => $descr,
