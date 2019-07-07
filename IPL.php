@@ -49,7 +49,7 @@ function LocateIP($ip, $type)
         }
     }
     
-    // Cleaning orginal data and cutting of unnecessarily data that came from 
+    // Cleaning orginal data and cutting of unnecessary data that came from 
     $country = is_array($output['country']) ? $output['country'][0] : $output['country'];
     $person  = is_array($output['person']) ? join(" OR ", $output['person']) : $output['person'];
     $abuse   = is_array($output['abuse-mailbox']) ? join(" | ", $output['abuse-mailbox']) : $output['abuse-mailbox'];
