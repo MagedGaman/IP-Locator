@@ -27,11 +27,11 @@ function LocateIP($ip, $type)
         }
     }
     
+    // Converting the results into array
     foreach ($results as $whoisserver => $result) {
         $res .= $result;
     }
     
-    // Converting the results into array    
     $lines  = explode("\n", $res);
     $output = array();
     foreach ($lines as $line) {
@@ -47,46 +47,26 @@ function LocateIP($ip, $type)
         } else {
             $output[$key] = $value;
         }
-            $output['website'] = (isset($output['abuse-mailbox']) ? substr(strrchr($output['abuse-mailbox'], "@"), 1) : (!is_array($output['e-mail']) ? substr(strrchr($output['e-mail'], "@"), 1) : (isset($output['e-mail']) ? substr(strrchr($output['e-mail'][0], "@"), 1) : substr(strrchr($output['notify'], "@"), 1))));
+        $output['website'] = (isset($output['abuse-mailbox']) ? substr(strrchr($output['abuse-mailbox'], "@"), 1) : (!is_array($output['e-mail']) ? substr(strrchr($output['e-mail'], "@"), 1) : (isset($output['e-mail']) ? substr(strrchr($output['e-mail'][0], "@"), 1) : substr(strrchr($output['notify'], "@"), 1))));
     }
     
     // Cleaning orginal data and cutting of unnecessary data that came from 
-    $country = is_array($output['country']) ? $output['country'][0] : $output['country'];
-    $person  = is_array($output['person']) ? join(" OR ", $output['person']) : $output['person'];
-    $website = is_array($output['website']) ? join(" | ", $output['website']) : $output['website'];
-    $abuse   = is_array($output['abuse-mailbox']) ? join(" | ", $output['abuse-mailbox']) : $output['abuse-mailbox'];
-    $phone   = is_array($output['phone']) ? join(" | ", $output['phone']) : $output['phone'];
-    $descr   = is_array($output['descr']) ? join(", ", $output['descr']) : $output['descr'];
-    $email   = is_array($output['e-mail']) ? join(", ", $output['e-mail']) : $output['e-mail'];
-    $notify  = is_array($output['notify']) ? join(" | ", $output['notify']) : $output['notify'];
-    $remarks = is_array($output['remarks']) ? join(", ", $output['remarks']) : $output['remarks'];
-    $netname = is_array($output['netname']) ? $output['netname'][0] : $output['netname'];
-    $address = is_array($output['address']) ? join(", ", $output['address']) : $output['address'];
-    $source  = is_array($output['source']) ? $output['source'][0] : $output['source'];
-    $normal  = array(
-        'country' => $country,
-        'person' => $person,
-        'website' => $website,
-        'abuse-mailbox' => $abuse,
-        'phone' => $phone,
-        'descr' => $descr,
-        'e-mail' => $email,
-        'notify' => $notify,
-        'netname' => $netname,
-        'address' => $address,
-        'remarks' => $remarks,
-        'source' => $source
-    );
+    $normal                  = array();
+    $normal['country']       = is_array($output['country']) ? $output['country'][0] : $output['country'];
+    $normal['person']        = is_array($output['person']) ? join(" OR ", $output['person']) : $output['person'];
+    $normal['abuse-mailbox'] = is_array($output['abuse-mailbox']) ? join(" | ", $output['abuse-mailbox']) : $output['abuse-mailbox'];
+    $normal['phone']         = is_array($output['phone']) ? join(" | ", $output['phone']) : $output['phone'];
+    $normal['website']       = is_array($output['website']) ? join(" | ", $output['website']) : $output['website'];
+    $normal['descr']         = is_array($output['descr']) ? join(", ", $output['descr']) : $output['descr'];
+    $normal['e-mail']        = is_array($output['e-mail']) ? join(", ", $output['e-mail']) : $output['e-mail'];
+    $normal['notify']        = is_array($output['notify']) ? join(" | ", $output['notify']) : $output['notify'];
+    $normal['remarks']       = is_array($output['remarks']) ? join(", ", $output['remarks']) : $output['remarks'];
+    $normal['netname']       = is_array($output['netname']) ? $output['netname'][0] : $output['netname'];
+    $normal['address']       = is_array($output['address']) ? join(", ", $output['address']) : $output['address'];
+    $normal['source']        = is_array($output['source']) ? $output['source'][0] : $output['source'];
     
-    if ($type == 'normal') { // In case of pulling cleaned data
-        return $normal;
-    } elseif ($type == 'full') { // In case of pulling the orginal data
-        return $output;
-    } elseif (array_key_exists($type, $output)) { // In case of pulling specified row
-        return $output["$type"];
-    } else {
-        return "Your request was not found!";
-    }
+    // To return data based on the specifed type on LocateIP('Your_IP', 'full')
+    return ($type == 'normal' ? $normal : ($type == 'full' ? $output : (array_key_exists($type, $output) ? $output["$type"] : "The data type You requested was not found, please try: full, normal, or specify a valid row name ")));
     
 }
 
@@ -116,4 +96,4 @@ function WhoisQuery($whoisserver, $ip)
     return $res;
 }
 
-?> 
+?>
