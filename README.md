@@ -4,7 +4,8 @@ This Library allows you to convert an IP address into a full row of data includi
 
 Example of a practical usage:
 ------------------------------------------
-**Login alerts**
+**Login alerts:**
+
 This Library can be used to notify your users about their logins or unauthorized login with rich data, and it does not require any paid API's.
 
 ```
@@ -21,7 +22,8 @@ ISP name: ISP company
 Abuse report email: example@example.com
 Phone Number: +100 0000 000
 ```
-**Identify Languages**
+**Identify Languages:**
+
 This Library can be used to Identify the Language of any IP address which will help you set your website's language based on the user's language.
 
 Usage
