@@ -25,7 +25,7 @@ Usage
 ```
 <?php 
 include 'IPL.php';
-$get = LocateIP('Your_IP');
+$get = LocateIP('Your_IP', 'normal');
 echo "<pre>";
 print_r($get);
 echo "</pre>";
