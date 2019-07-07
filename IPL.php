@@ -1,5 +1,6 @@
 <?php
-function LocateIP($ip)
+
+function LocateIP($ip, $type)
 {
     //Whois ip zones's servers list 
     $whoisservers = array(
@@ -28,10 +29,10 @@ function LocateIP($ip)
     
     // Converting the results into array
     foreach ($results as $whoisserver => $result) {
-      $res .= $result;
+        $res .= $result;
     }
     
-    $lines = explode("\n", $res);
+    $lines  = explode("\n", $res);
     $output = array();
     foreach ($lines as $line) {
         list($key, $value) = explode(': ', $line, 2);
@@ -47,7 +48,42 @@ function LocateIP($ip)
             $output[$key] = $value;
         }
     }
-    return $output;
+    
+    // Cleaning orginal data and cutting of unnecessarily data that came from 
+    $country = is_array($output['country']) ? $output['country'][0] : $output['country'];
+    $person  = is_array($output['person']) ? join(" OR ", $output['person']) : $output['person'];
+    $abuse   = is_array($output['abuse-mailbox']) ? join(" | ", $output['abuse-mailbox']) : $output['abuse-mailbox'];
+    $phone   = is_array($output['phone']) ? join(" | ", $output['phone']) : $output['phone'];
+    $descr   = is_array($output['descr']) ? join(", ", $output['descr']) : $output['descr'];
+    $email   = is_array($output['e-mail']) ? join(", ", $output['e-mail']) : $output['e-mail'];
+    $notify  = is_array($output['notify']) ? join(" | ", $output['notify']) : $output['notify'];
+    $remarks = is_array($output['remarks']) ? join(", ", $output['remarks']) : $output['remarks'];
+    $netname = is_array($output['netname']) ? $output['netname'][0] : $output['netname'];
+    $address = is_array($output['address']) ? join(", ", $output['address']) : $output['address'];
+    $source  = is_array($output['source']) ? $output['source'][0] : $output['source'];
+    $normal  = array(
+        'country' => $country,
+        'person' => $person,
+        'abuse-mailbox' => $abuse,
+        'phone' => $phone,
+        'descr' => $descr,
+        'e-mail' => $email,
+        'notify' => $notify,
+        'netname' => $netname,
+        'address' => $address,
+        'remarks' => $remarks,
+        'source' => $source
+    );
+    
+    if ($type == 'normal') { // In case of pulling cleaned data
+        return $normal;
+    } elseif ($type == 'full') { // In case of pulling the orginal data
+        return $output;
+    } elseif (array_key_exists($type, $output)) { // In case of pulling specified row
+        return $output["$type"];
+    } else {
+        return "Your request was not found!";
+    }
     
 }
 
@@ -77,4 +113,4 @@ function WhoisQuery($whoisserver, $ip)
     return $res;
 }
 
-?>
+?> 
