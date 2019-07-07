@@ -47,6 +47,7 @@ function LocateIP($ip, $type)
         } else {
             $output[$key] = $value;
         }
+            $output['website'] = (isset($output['abuse-mailbox']) ? substr(strrchr($output['abuse-mailbox'], "@"), 1) : (!is_array($output['e-mail']) ? substr(strrchr($output['e-mail'], "@"), 1) : (isset($output['e-mail']) ? substr(strrchr($output['e-mail'][0], "@"), 1) : substr(strrchr($output['notify'], "@"), 1))));
     }
     
     // Cleaning orginal data and cutting of unnecessary data that came from 
