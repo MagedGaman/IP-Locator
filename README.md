@@ -22,7 +22,7 @@ ISP name: ISP company
 Abuse report email: example@example.com
 Phone Number: +100 0000 000
 ```
-**Identify Languages:**
+**Identify languages:**
 
 This Library can be used to Identify the Language of any IP address which will help you set your website's language based on the user's language.
 
