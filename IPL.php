@@ -27,11 +27,11 @@ function LocateIP($ip, $type)
         }
     }
     
-    // Converting the results into array
     foreach ($results as $whoisserver => $result) {
         $res .= $result;
     }
     
+    // Converting the results into array    
     $lines  = explode("\n", $res);
     $output = array();
     foreach ($lines as $line) {
