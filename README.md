@@ -1,11 +1,12 @@
 # IP-Locator
 
-This Snipe allows you to convert an IP address into a full row of data including the address, connection type, ISP, and the ISP's complaint contact details by checking five IP allocation zones.
-
-This Snipe can be used to notify your users about their logins or unauthorized login with rich data, and it does not require any paid API's.
+This Library allows you to convert an IP address into a full row of data including the address, connection type, ISP, and the ISP's complaint contact details by checking five IP allocation zones.
 
 Example of a practical usage:
 ------------------------------------------
+**Login alerts**
+This Library can be used to notify your users about their logins or unauthorized login with rich data, and it does not require any paid API's.
+
 ```
 New device signed in to your account:
 
@@ -20,6 +21,9 @@ ISP name: ISP company
 Abuse report email: example@example.com
 Phone Number: +100 0000 000
 ```
+**Identify Languages**
+This Library can be used to Identify the Language of any IP address which will help you set your website's language based on the user's language.
+
 Usage
 ------------------------------------------
 ```
