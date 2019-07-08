@@ -344,11 +344,11 @@
     "IN": {
         "cn": "India",
         "lc": [
+            "hi-IN",
             "as-IN",
             "bn-IN",
             "en-IN",
             "gu-IN",
-            "hi-IN",
             "kn-IN",
             "kok-IN",
             "ml-IN",
@@ -512,8 +512,8 @@
     "MY": {
         "cn": "Malaysia",
         "lc": [
-            "en-MY",
-            "ms-MY"
+            "ms-MY",
+            "en-MY"
         ]
     },
     "MV": {
@@ -652,8 +652,8 @@
     "PH": {
         "cn": "Philippines",
         "lc": [
-            "en-PH",
-            "fil-PH"
+            "fil-PH",
+            "en-PH"
         ]
     },
     "PN": "Pitcairn Islands",
@@ -865,8 +865,8 @@
     "GB": {
         "cn": "United Kingdom",
         "lc": [
-            "cy-GB",
             "en-GB",
+            "cy-GB",
             "gd-GB"
         ]
     },
