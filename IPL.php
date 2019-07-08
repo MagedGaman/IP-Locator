@@ -2,7 +2,7 @@
 
 function LocateIP($ip, $type)
 {
-    // Convert a country code into country name
+    // Convert a country code into country name, country Language
     $countries = json_decode(file_get_contents('Countries.json'), true);
     //Whois ip zones's servers list 
     $whoisservers = array(
