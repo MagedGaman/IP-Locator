@@ -2,7 +2,8 @@
     "AF": {
         "cn": "Afghanistan",
         "lc": [
-            "prs-AF"
+            "prs-AF",
+            "ps-AF"
         ]
     },
     "AX": "Aland Islands",
@@ -73,7 +74,8 @@
     "BE": {
         "cn": "Belgium",
         "lc": [
-            "fr-BE"
+            "fr-BE",
+            "nl-BE"
         ]
     },
     "BZ": {
@@ -88,7 +90,8 @@
     "BO": {
         "cn": "Bolivia",
         "lc": [
-            "es-BO"
+            "es-BO",
+            "quz-BO"
         ]
     },
     "BA": {
@@ -131,7 +134,9 @@
     "CA": {
         "cn": "Canada",
         "lc": [
-            "en-CA"
+            "en-CA",
+            "fr-CA",
+            "moh-CA"
         ]
     },
     "CV": "Cape Verde",
@@ -141,13 +146,17 @@
     "CL": {
         "cn": "Chile",
         "lc": [
-            "arn-CL"
+            "arn-CL",
+            "es-CL"
         ]
     },
     "CN": {
         "cn": "China",
         "lc": [
-            "bo-CN"
+            "bo-CN",
+            "ii-CN",
+            "ug-CN",
+            "zh-CN"
         ]
     },
     "CX": "Christmas Island",
@@ -200,7 +209,8 @@
     "EC": {
         "cn": "Ecuador",
         "lc": [
-            "es-EC"
+            "es-EC",
+            "quz-EC"
         ]
     },
     "EG": {
@@ -240,13 +250,21 @@
     "FI": {
         "cn": "Finland",
         "lc": [
-            "fi-FI"
+            "fi-FI",
+            "se-FI",
+            "smn-FI",
+            "sms-FI",
+            "sv-FI"
         ]
     },
     "FR": {
         "cn": "France, French Republic",
         "lc": [
-            "br-FR"
+            "br-FR",
+            "co-FR",
+            "fr-FR",
+            "gsw-FR",
+            "oc-FR"
         ]
     },
     "GF": "French Guiana",
@@ -263,7 +281,9 @@
     "DE": {
         "cn": "Germany",
         "lc": [
-            "de-DE"
+            "de-DE",
+            "dsb-DE",
+            "hsb-DE"
         ]
     },
     "GH": "Ghana",
@@ -286,7 +306,8 @@
     "GT": {
         "cn": "Guatemala",
         "lc": [
-            "es-GT"
+            "es-GT",
+            "qut-GT"
         ]
     },
     "GG": "Guernsey",
@@ -323,7 +344,20 @@
     "IN": {
         "cn": "India",
         "lc": [
-            "as-IN"
+            "as-IN",
+            "bn-IN",
+            "en-IN",
+            "gu-IN",
+            "hi-IN",
+            "kn-IN",
+            "kok-IN",
+            "ml-IN",
+            "mr-IN",
+            "or-IN",
+            "pa-IN",
+            "sa-IN",
+            "ta-IN",
+            "te-IN"
         ]
     },
     "ID": {
@@ -347,7 +381,8 @@
     "IE": {
         "cn": "Ireland",
         "lc": [
-            "en-IE"
+            "en-IE",
+            "ga-IE"
         ]
     },
     "IM": "Isle of Man",
@@ -455,7 +490,9 @@
     "LU": {
         "cn": "Luxembourg",
         "lc": [
-            "de-LU"
+            "de-LU",
+            "fr-LU",
+            "lb-LU"
         ]
     },
     "MO": {
@@ -475,7 +512,8 @@
     "MY": {
         "cn": "Malaysia",
         "lc": [
-            "en-MY"
+            "en-MY",
+            "ms-MY"
         ]
     },
     "MV": {
@@ -538,14 +576,16 @@
     "NL": {
         "cn": "Netherlands the",
         "lc": [
-            "fy-NL"
+            "fy-NL",
+            "nl-NL"
         ]
     },
     "NC": "New Caledonia",
     "NZ": {
         "cn": "New Zealand",
         "lc": [
-            "en-NZ"
+            "en-NZ",
+            "mi-NZ"
         ]
     },
     "NI": {
@@ -558,7 +598,8 @@
     "NG": {
         "cn": "Nigeria",
         "lc": [
-            "ig-NG"
+            "ig-NG",
+            "yo-NG"
         ]
     },
     "NU": "Niue",
@@ -567,7 +608,11 @@
     "NO": {
         "cn": "Norway",
         "lc": [
-            "nb-NO"
+            "nb-NO",
+            "nn-NO",
+            "se-NO",
+            "sma-NO",
+            "smj-NO"
         ]
     },
     "OM": {
@@ -600,13 +645,15 @@
     "PE": {
         "cn": "Peru",
         "lc": [
-            "es-PE"
+            "es-PE",
+            "quz-PE"
         ]
     },
     "PH": {
         "cn": "Philippines",
         "lc": [
-            "en-PH"
+            "en-PH",
+            "fil-PH"
         ]
     },
     "PN": "Pitcairn Islands",
@@ -644,7 +691,10 @@
     "RU": {
         "cn": "Russian Federation",
         "lc": [
-            "ba-RU"
+            "ba-RU",
+            "ru-RU",
+            "sah-RU",
+            "tt-RU"
         ]
     },
     "RW": {
@@ -681,7 +731,8 @@
     "SG": {
         "cn": "Singapore",
         "lc": [
-            "en-SG"
+            "en-SG",
+            "zh-SG"
         ]
     },
     "SK": {
@@ -701,14 +752,22 @@
     "ZA": {
         "cn": "South Africa",
         "lc": [
-            "af-ZA"
+            "af-ZA",
+            "en-ZA",
+            "nso-ZA",
+            "tn-ZA",
+            "xh-ZA",
+            "zu-ZA"
         ]
     },
     "GS": "South Georgia and the South Sandwich Islands",
     "ES": {
         "cn": "Spain",
         "lc": [
-            "ca-ES"
+            "ca-ES",
+            "es-ES",
+            "eu-ES",
+            "gl-ES"
         ]
     },
     "LK": {
@@ -724,19 +783,26 @@
     "SE": {
         "cn": "Sweden",
         "lc": [
-            "se-SE"
+            "se-SE",
+            "sma-SE",
+            "smj-SE",
+            "sv-SE"
         ]
     },
     "CH": {
         "cn": "Switzerland, Swiss Confederation",
         "lc": [
-            "de-CH"
+            "de-CH",
+            "fr-CH",
+            "it-CH",
+            "rm-CH"
         ]
     },
     "SY": {
         "cn": "Syrian Arab Republic",
         "lc": [
-            "ar-SY"
+            "ar-SY",
+            "syr-SY"
         ]
     },
     "TW": {
@@ -799,13 +865,16 @@
     "GB": {
         "cn": "United Kingdom",
         "lc": [
-            "cy-GB"
+            "cy-GB",
+            "en-GB",
+            "gd-GB"
         ]
     },
     "US": {
         "cn": "United States of America",
         "lc": [
-            "en-US"
+            "en-US",
+            "es-US"
         ]
     },
     "UM": "United States Minor Outlying Islands",
