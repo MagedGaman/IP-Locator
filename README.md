@@ -1,4 +1,4 @@
-# IP-Locator
+# Introduction
 
 This Library allows you to convert an IP address into a full row of data including the address, connection type, ISP, and the ISP's complaint contact details by checking five IP allocation zones.
 
