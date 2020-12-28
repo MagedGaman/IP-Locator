@@ -49,5 +49,19 @@ Here are the list of MetaData available. By default, the function will return th
 | Name                                   | Description        |
 | ----------------------------------------- | -------------------------------------------------------------- |    
 | country                                   | No Description        |
+| country-name                                   | No Description        |
+| language                                   | No Description        |
+| person                                   | No Description        |
+| abuse-mailbox                                   | No Description        |
+| phone                                   | No Description        |
+| website                                   | No Description        |
+| descr                                   | No Description        |
+| e-mail                                   | No Description        |
+| notify                                   | No Description        |
+| remarks                                   | No Description        |
+| netname                                   | No Description        |
+| address                                   | No Description        |
+| source                                   | No Description        |
+
 
 **Have A Good Day!**
