@@ -44,7 +44,8 @@ include 'IPL.php';
 $country = LocateIP('Your_IP', 'country-name');
 echo "$country";
 ```
-**List of Metadata!:**
+**List of Metadata:**
+
 Here are the list of MetaData available. By default, the function will return them all as an array, however, if you wish to call a specific you may make use of the following:
 | Name                                   | Description        |
 | ----------------------------------------- | -------------------------------------------------------------- |    
