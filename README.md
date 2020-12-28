@@ -28,11 +28,26 @@ This Library can be used to Identify the Language of any IP address which will h
 
 Usage
 ------------------------------------------
+To get an array of wide range of metadata:
 ```
 <?php 
 include 'IPL.php';
-$get = LocateIP('Your_IP', 'normal');
+$get = LocateIP('Your_IP');
 echo "<pre>";
 print_r($get);
 echo "</pre>";
 ```
+To get a specific string such as the Country name:
+```
+<?php 
+include 'IPL.php';
+$country = LocateIP('Your_IP', 'country-name');
+echo "$country";
+```
+**List of Metadata!:**
+Here are the list of MetaData available. By default, the function will return them all as an array, however, if you wish to call a specific you may make use of the following:
+| Name                                   | Description        |
+| ----------------------------------------- | -------------------------------------------------------------- |    
+| country                                   | No Description        |
+
+**Have A Good Day!**
