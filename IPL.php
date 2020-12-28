@@ -1,6 +1,6 @@
 <?php
 
-function LocateIP($ip, $type)
+function LocateIP($ip, $type = 'normal')
 {
     // Convert a country code into country name, country Language
     $countries = json_decode(file_get_contents('Countries.json'), true);
