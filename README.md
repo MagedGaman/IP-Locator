@@ -46,7 +46,7 @@ echo "$country";
 ```
 **List of Metadata:**
 
-Here are the list of MetaData available. By default, the function will return them all as an array, however, if you wish to call a specific you may make use of the following:
+By default, the function will return them all as an array, however, if you wish to return a specific string, you may make use of the following:
 | Name                                   | Description        |
 | ----------------------------------------- | -------------------------------------------------------------- |    
 | country                                   | No Description        |
