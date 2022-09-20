@@ -42,7 +42,7 @@ echo "</pre>";
 <?php 
 include 'IPL.php';
 $country = LocateIP('Your_IP', 'country-name');
-echo "$country";
+echo $country;
 ```
 **List of Metadata:**
 
