@@ -6,7 +6,7 @@ Example of a practical usage:
 ------------------------------------------
 **Login alerts:**
 
-This Library can be used to notify your users about their logins or unauthorized login with rich data, and it does not require any paid API's.
+This package can be used to notify your users about their logins or unauthorized login with rich data, and it does not require any paid API's.
 
 ```
 New device signed in to your account:
