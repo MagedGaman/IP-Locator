@@ -38,6 +38,9 @@ print_r($get);
 echo "</pre>";
 ```
 - To get a specific string such as the Country name:
+- 
+By default, the function will return all of the available metadata as an array, however, if you wish to return a specific string of information, you can pass the string name as follows:
+
 ```
 <?php 
 include 'IPL.php';
@@ -46,7 +49,6 @@ echo $country;
 ```
 **List of Metadata:**
 
-By default, the function will return them all as an array, however, if you wish to return a specific string, you may make use of the following:
 | Name                                   | Description        |
 | ----------------------------------------- | -------------------------------------------------------------- |    
 | country                                   | No Description        |
