@@ -68,6 +68,7 @@ echo $country;
 
 
 Limitations
+------------------------------------------
 The accuracy of the returned data depends on the completeness and accuracy of the information provided by the IP zones' servers. Some servers may not have complete or up-to-date information, and the data may not always be reliable.
 
 The code also requires the Countries.json file, which contains a list of countries and their respective data. This file must be in the same directory as the code.
