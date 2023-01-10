@@ -72,7 +72,7 @@ The accuracy of the returned data depends on the completeness and accuracy of th
 
 The code also requires the Countries.json file, which contains a list of countries and their respective data. This file must be in the same directory as the code.
 
-**Note: **
+**Note:**
 This code is provided as is, without any warranty or guarantee of any kind.
 
 **Have A Good Day!**
