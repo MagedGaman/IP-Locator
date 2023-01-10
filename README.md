@@ -51,14 +51,14 @@ echo $country;
 
 | Name                                   | Description        |
 | ----------------------------------------- | -------------------------------------------------------------- |    
-| country                                   | No Description        |
-| country-name                                   | No Description        |
-| language                                   | No Description        |
-| person                                   | No Description        |
-| abuse-mailbox                                   | No Description        |
-| phone                                   | No Description        |
-| website                                   | No Description        |
-| descr                                   | No Description        |
+| country                                   | The 2-letter country code of the IP address        |
+| country-name                                   | The full name of the country        |
+| language                                   | The main language spoken in the country        |
+| person                                   | The name of the person or organization responsible for the IP block        |
+| abuse-mailbox                                   | An email address for reporting abuse        |
+| phone                                   | The phone number of the organization responsible for the IP block        |
+| website                                   | The website of the organization responsible for the IP block        |
+| descr                                   | A description of the organization or purpose of the IP block        |
 | e-mail                                   | No Description        |
 | notify                                   | No Description        |
 | remarks                                   | No Description        |
@@ -67,4 +67,13 @@ echo $country;
 | source                                   | No Description        |
 
 
+Limitations
+The accuracy of the returned data depends on the completeness and accuracy of the information provided by the IP zones' servers. Some servers may not have complete or up-to-date information, and the data may not always be reliable.
+
+The code also requires the Countries.json file, which contains a list of countries and their respective data. This file must be in the same directory as the code.
+
+Note
+This code is provided as is, without any warranty or guarantee of any kind.
+
 **Have A Good Day!**
+
